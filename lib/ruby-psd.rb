@@ -9,7 +9,7 @@ class RubyPSD
     @height = 0
     @layers = []
   end
-  attr_accessor :width, :height, :layers
+  attr_accessor :path, :width, :height, :layers
     
   def get_file_header 
   [
