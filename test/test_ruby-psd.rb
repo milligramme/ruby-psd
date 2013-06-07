@@ -54,3 +54,9 @@ psd.layers = [
 ]
 
 psd.generate
+
+# :path
+`rm -f ./sample_copy.psd`
+saveas_path = psd.path.gsub(/(.+)(\.psd$)/, '\1_copy\2')
+psd.path = saveas_path
+psd.generate
